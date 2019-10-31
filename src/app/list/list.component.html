@@ -1,0 +1,15 @@
+<div class="container">
+<div class="row">
+<div class="bgGray" *ngFor="let pokemon of pokemons; let i = index" [attr.data-index]="i">
+  <div class="col mx-2 my-2 card at-5 text-center" style="width: 18rem;">
+    <div class="row">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{i+1}}.png">
+    </div>
+    <div class="row text-center">
+    {{pokemon.name}}
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
